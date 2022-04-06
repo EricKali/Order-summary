@@ -2,5 +2,5 @@
 
 ## Test Project
 
-**[TESTE(https://erikkali.github.io/Order-summary/)**
+**[TESTE](https://erikkali.github.io/Order-summary/)**
 
