@@ -1,16 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 :root {
     /* Primary Colors */
-    --Paleblue: hsl(225, 100%, 94%);
-    --Brightblue: hsl(245, 75%, 52%);
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
     /* Neutral Colors */
-    --Veryaleblue: hsl(225, 100%, 98%);
-    --Desaturatedblue: hsl(224, 23%, 55%);
-    --Darkblue: hsl(223, 47%, 23%);
+    --veryaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+    /* Font Family */
+    --font: 'Red Hat Display', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: var(--paleblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0px 2px 0px var(--desaturatedblue);
+}
+
+.card>img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 300px;
+}
+
+.card>h2 {
+    text-align: center;
+    padding: 20px;
+    font-family: var(--font);
+    font-weight: 900;
+}
+
+.card>p {
+    text-align: center;
+    font-family: var(--font);
+    font-size: 16;
+    font-weight: 500;
+    color: var(--desaturatedblue);
+    padding: 0 15px;
+}
+
+.plan {
+    background: var(--veryaleblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 260px;
+    height: 75px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.typplan {
+    margin-left: 15px;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.typplan em {
+    color: var(--desaturatedblue);
+    font-size: .9em;
+}
+
+.plan a {
+    font-family: var(--font);
+    font-size: .8em;
+    font-weight: 900;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.payeorder {
+    background: var(--brightblue);
+    color: white;
+    font-family: var(--font);
+    font-size: .8em;
+    font-weight: 900;
+    width: 260px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 15px 5px var(--paleblue);
+}
+
+.cancel {
+    background: none;
+    color: var(--desaturatedblue);
+    font-family: var(--font);
+    font-size: .8em;
+    font-weight: 900;
+    width: 260px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin: 15px 0;
 }
