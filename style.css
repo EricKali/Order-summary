@@ -82,6 +82,8 @@ body {
 .typplan em {
     color: var(--desaturatedblue);
     font-size: .9em;
+    font-style: normal;
+    font-style: normal;
 }
 
 .plan a {
@@ -107,6 +109,7 @@ body {
     border-radius: 8px;
     border: none;
     box-shadow: 0 10px 15px 5px var(--paleblue);
+    cursor: pointer;
 }
 
 .cancel {
@@ -120,4 +123,5 @@ body {
     border-radius: 8px;
     border: none;
     margin: 15px 0;
+    cursor: pointer;
 }
